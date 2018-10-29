@@ -8,21 +8,19 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnitParamsRunner.class)
-public class FizzTests {
+public class FizzBuzzTests {
 
     @Test
     @Parameters({
-            "3",
-            "6",
-            "9",
-            "33",
-            "36",
-            "39",
-            "66",
-            "99",
+            "15",
+            "30",
+            "45",
+            "60",
+            "75",
+            "90",
     })
-    public void fizz_when_number_evenly_divisible_by_3(int number) {
+    public void fizzbuzz_when_number_evenly_divisible_by_both_3_and_5(int number) {
         var fizzBuzz = new FizzBuzz();
-        assertEquals("Fizz", fizzBuzz.forNumber(number));
+        assertEquals("FizzBuzz", fizzBuzz.forNumber(number));
     }
 }
