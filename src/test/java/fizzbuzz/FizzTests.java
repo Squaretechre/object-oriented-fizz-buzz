@@ -21,7 +21,6 @@ public class FizzTests {
             "39",
             "66",
             "99",
-
     })
     public void fizz_when_number_evenly_divisible_by_3(int number) {
         var fizzBuzz = new FizzBuzz();
