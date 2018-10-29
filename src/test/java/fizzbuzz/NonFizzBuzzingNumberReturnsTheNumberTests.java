@@ -17,4 +17,10 @@ public class NonFizzBuzzingNumberReturnsTheNumberTests {
         var fizzBuzz = new FizzBuzz();
         assertEquals("2", fizzBuzz.forNumber(2));
     }
+
+    @Test
+    public void returns_string_4_for_number_4 () {
+        var fizzBuzz = new FizzBuzz();
+        assertEquals("4", fizzBuzz.forNumber(4));
+    }
 }
