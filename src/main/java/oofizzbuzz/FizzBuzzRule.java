@@ -8,7 +8,7 @@ public class FizzBuzzRule implements Rule {
     }
 
     @Override
-   public String applyTo(int number) {
+    public String applyTo(int number) {
         return number % 5 == 0 && number % 3 == 0
                 ? "FizzBuzz"
                 : nextRule.applyTo(number);

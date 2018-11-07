@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class FizzBuzzTests {
     @Test
     public void range_containing_15_returns_list_containing_buzz() {
-        List<String> expected = asList(
+        var expected = asList(
                 "1", "2",
                 "Fizz",
                 "4",

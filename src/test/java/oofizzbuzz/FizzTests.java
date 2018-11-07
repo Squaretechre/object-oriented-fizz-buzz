@@ -24,7 +24,7 @@ public class FizzTests {
 
     @Test
     public void numbers_containing_a_3_return_fizz() {
-        List<String> expected = asList(
+        var expected = asList(
                 "1", "2",
                 "Fizz",
                 "4",
