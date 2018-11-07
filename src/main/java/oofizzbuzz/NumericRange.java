@@ -20,7 +20,7 @@ class NumericRange {
     List<String> apply(Rule rule) {
         return range
                 .stream()
-                .map(rule::apply)
+                .map(rule::applyTo)
                 .collect(Collectors.toList());
     }
 }

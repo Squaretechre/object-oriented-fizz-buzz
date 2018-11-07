@@ -12,9 +12,9 @@ public class FizzWhenDivisibleByThreeRule implements Rule {
     }
 
     @Override
-    public String apply(int number) {
+    public String applyTo(int number) {
         return number % 3 == 0
                 ? "Fizz"
-                : nextRule.apply(number);
+                : nextRule.applyTo(number);
     }
 }

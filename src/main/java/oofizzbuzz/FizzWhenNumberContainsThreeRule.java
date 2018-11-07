@@ -8,9 +8,9 @@ public class FizzWhenNumberContainsThreeRule implements Rule {
     }
 
     @Override
-    public String apply(int number) {
+    public String applyTo(int number) {
         return String.valueOf(number).contains("3")
                 ? "Fizz"
-                : nextRule.apply(number);
+                : nextRule.applyTo(number);
     }
 }

@@ -2,5 +2,5 @@ package oofizzbuzz;
 
 @FunctionalInterface
 interface Rule {
-   String apply(int number);
+   String applyTo(int number);
 }

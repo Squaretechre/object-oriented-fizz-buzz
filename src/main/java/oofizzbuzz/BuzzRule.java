@@ -8,9 +8,9 @@ public class BuzzRule implements Rule {
     }
 
     @Override
-    public String apply(int number) {
+    public String applyTo(int number) {
         return number % 5 == 0
                 ? "Buzz"
-                : nextRule.apply(number);
+                : nextRule.applyTo(number);
     }
 }
