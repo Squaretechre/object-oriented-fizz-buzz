@@ -6,23 +6,28 @@ import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class FizzBuzzTests {
+public class WizzTests {
     @Test
     public void range_containing_15_returns_list_containing_buzz() {
         var expected = asList(
-                "1", "2",
-                "Fizz",
+                "1",
+                "Wizz",
+                "FizzWizz",
                 "4",
+                "BuzzWizz",
+                "Fizz",
+                "Wizz",
+                "8",
+                "Fizz",
                 "Buzz",
+                "Wizz",
                 "Fizz",
-                "7", "8",
-                "Fizz",
-                "Buzz",
-                "11",
-                "Fizz",
-                "Fizz",
+                "Wizz",
                 "14",
-                "FizzBuzz");
-        assertThat(new NumericRange(1, 15).apply(new CompositeRule()), is(expected));
+                "FizzBuzz"
+        );
+
+        var rule = new WizzCompositeRule(new NoMatchRule());
+        assertThat(new NumericRange(1, 15).apply(rule), is(expected));
     }
 }
