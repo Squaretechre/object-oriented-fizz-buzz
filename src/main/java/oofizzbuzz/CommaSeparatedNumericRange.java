@@ -7,7 +7,7 @@ class CommaSeparatedNumericRange {
         this.numericRange = numericRange;
     }
 
-    String apply(CompositeRule compositeRule) {
+    String apply(Rule compositeRule) {
         return String.join(", ", numericRange.apply(compositeRule));
     }
 }
